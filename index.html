@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kata web 4 - Formulaire contact</title>
+  <link rel="stylesheet" href="./recette.css">
+</head>
+
+<body>
+
+	<h1>Formulaire de contact </h1>
+
+	<form method="post" action="traitement.php">  <!-- traitement.php sera la page qui traitera les résultat du formulaiere -->
+		<p> <!-----------------ZONE PRÉNOM ET NOM------------------------->
+		<!--"input" est la zone de saisie à laquelle on affecte un type et un nom-->	
+		<!--"label" sert à indiquer à l'utilisateur ce qui est attendu (avant la zone)-->
+		<!--Pour lier le "label" au champ, on lui donne un attribut "for" qui a la même valeur que l' "id" du champ-->
+		<label for="prenom">Prénom</label> : <input type="text" name="prenom" id="prenom"/> 
+		<label for="nom">NOM</label> : <input type="text" name="nom" id="nom">
+		</p>
+
+		<p> <!-----------------ZONE MESSAGE------------------------->
+		<label for="message">Message :</label><br>
+		<textarea name="message" id="message"></textarea>
+		</p>
+	</form>
+
+
+</body>
